@@ -1,0 +1,18 @@
+<p>admin works!</p>
+
+<h1>if condition</h1>
+<!-- <h2 *ngIf="status1; else elseblock">This if condition when flase then not show this tag</h2>
+<ng-template #elseblock><h1> This is else block in</h1> </ng-template> -->
+<ul *ngFor="let user of userList index as i" [style.color]= "i%2?'red':'blue'">
+    <li>
+        {{i}}
+    </li>
+ <li>
+     {{user.id}}
+ </li>
+ <li>
+     {{user.name}}
+ </li>
+</ul>
+
+
